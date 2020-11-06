@@ -22,7 +22,7 @@ Naive C4.5 Algorithm
 </p>
 
 <p align="center">
-    <img src="photos/infoEntropy.png" width=75%>
+    <img src="photos/infoEntropy.png" width=70%>
 </p>
 
 <p align="center">
