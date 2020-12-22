@@ -1,6 +1,6 @@
 <h1>Decision Tree Learning Classification</h1>
 <p align="justify">
-    This is a naive C4.5 algorithm used for the classification of data written in Python.
+    This is a naive C4.5 algorithm used for classification of data written in Python.
 </p>
 
 <p align="left">
