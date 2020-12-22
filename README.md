@@ -101,7 +101,7 @@ model.plot( 'Will Peter Play Golf?' )
 ```
 
 
-![png](tennistree.png)
+![png](photos/tennistree.png)
 
 ```python
 model = DecisionTree()
