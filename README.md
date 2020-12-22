@@ -31,11 +31,11 @@
 
 <hr>
 <p align="center">
-    <img src="photos/equations/equation6.png" width=50%>
+    <img src="photos/equations/equation5.png" width=50%>
 </p>
 
 <p align="center">
-    <img src="photos/equations/equation7.png" width=50%>
+    <img src="photos/equations/equation6.png" width=50%>
 </p>
 <hr>
 
@@ -47,21 +47,21 @@
 
 <hr>
 <p align="center">
-    <img src="photos/equations/equation8.png" width=50%>
+    <img src="photos/equations/equation7.png" width=50%>
 </p>
 
+<p align="center">
+    <img src="photos/equations/equation8.png" width=50%>
+</p>
+<hr>
+
+<hr>
 <p align="center">
     <img src="photos/equations/equation9.png" width=50%>
 </p>
-<hr>
 
-<hr>
 <p align="center">
     <img src="photos/equations/equation10.png" width=50%>
-</p>
-
-<p align="center">
-    <img src="photos/equations/equation11.png" width=50%>
 </p>
 <hr>
 
