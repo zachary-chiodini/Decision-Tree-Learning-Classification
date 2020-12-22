@@ -2,6 +2,10 @@
 Naive C4.5 Algorithm
 
 <p align="center">
+    <img src="photos/dependencies.png" width=50%>
+</p>
+
+<p align="center">
     <img src="photos/equations/equation1.png" width=50%>
 </p>
 
