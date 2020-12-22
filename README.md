@@ -80,6 +80,9 @@ from decision_tree import DecisionTree
 ```python
 model = DecisionTree()
 model.importcsv( 'tennis.csv' )
+```
+
+```python
 model.label
 ```
 
