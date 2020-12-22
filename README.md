@@ -1,8 +1,8 @@
 # Decision Tree Learning Classification
 Naive C4.5 Algorithm
 
-<p align="center">
-    <img src="photos/dependencies.png" width=50%>
+<p align="left">
+    <img src="photos/dependencies.png" width="244px">
 </p>
 
 <p align="center">
