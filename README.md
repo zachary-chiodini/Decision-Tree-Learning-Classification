@@ -158,4 +158,12 @@ model.testAndTrain( ratio = 0.25 )
     Samples in training set:  2031
     Samples tested         :  6093
     Total samples          :  8124
-    Model accuracy         :  98.97 %
+    Model accuracy         :  99.61 %
+
+```python
+model.plot()
+```
+
+<p align="center">
+    <img src="photos/mushroomtree.png" width=100%>
+</p>
