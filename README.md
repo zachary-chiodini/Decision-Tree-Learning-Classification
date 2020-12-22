@@ -55,9 +55,7 @@
 <p align="center">
     <img src="photos/equations/equation8.png" width=50%>
 </p>
-<hr>
 
-<hr>
 <p align="center">
     <img src="photos/equations/equation9.png" width=50%>
 </p>
