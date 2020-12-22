@@ -52,3 +52,53 @@ Naive C4.5 Algorithm
 <p align="center">
     <img src="photos/algorithm.png" width=63%>
 </p>
+
+```python
+from decision_tree import DecisionTree
+```
+
+
+```python
+model = DecisionTree()
+model.importcsv( 'tennis.csv' )
+model.data
+```
+
+
+
+
+    {('Overcast', 'High', 'Strong', 'Yes'),
+     ('Overcast', 'High', 'Weak', 'Yes'),
+     ('Overcast', 'Normal', 'Strong', 'Yes'),
+     ('Overcast', 'Normal', 'Weak', 'Yes'),
+     ('Rain', 'High', 'Strong', 'No'),
+     ('Rain', 'High', 'Weak', 'Yes'),
+     ('Rain', 'Normal', 'Strong', 'No'),
+     ('Rain', 'Normal', 'Weak', 'Yes'),
+     ('Sunny', 'High', 'Strong', 'No'),
+     ('Sunny', 'High', 'Weak', 'No'),
+     ('Sunny', 'Normal', 'Strong', 'Yes'),
+     ('Sunny', 'Normal', 'Weak', 'Yes')}
+
+
+
+
+```python
+model.label
+```
+
+
+
+
+    ['Outlook', 'Humidity', 'Wind', 'Play']
+
+
+
+
+```python
+model.learn( model.data )
+model.plot( 'Will Peter Play Golf?' )
+```
+
+
+![png](tennistree.png)
