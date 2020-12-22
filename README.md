@@ -1,5 +1,7 @@
-# Decision Tree Learning Classification
-Naive C4.5 Algorithm
+<h1>Decision Tree Learning Classification</h1>
+<p align="justify">
+    This is a naive C4.5 algorithm used for the classification of data written in Python.
+</p>
 
 <p align="left">
     <img src="photos/dependencies.png" width="244px">
