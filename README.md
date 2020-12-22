@@ -102,3 +102,60 @@ model.plot( 'Will Peter Play Golf?' )
 
 
 ![png](tennistree.png)
+
+```python
+model = DecisionTree()
+model.importcsv( 'mushrooms.csv' )
+len( model.data )
+```
+
+
+
+
+    8124
+
+
+
+
+```python
+model.label
+```
+
+
+
+
+    ['cap shape',
+     'cap surface',
+     'cap color',
+     'bruises',
+     'odor',
+     'gill attachment',
+     'gill spacing',
+     'gill size',
+     'gill color',
+     'stalk shape',
+     'stalk root',
+     'stalk surface above ring',
+     'stalk surface below ring',
+     'stalk color above ring',
+     'stalk color below ring',
+     'veil type',
+     'veil color',
+     'ring number',
+     'ring type',
+     'spore print color',
+     'population',
+     'habitat',
+     'class']
+
+
+
+
+```python
+model.testAndTrain( ratio = 0.25 )
+```
+
+    Samples in training set:  2031
+    Samples tested         :  6093
+    Total samples          :  8124
+    Model accuracy         :  98.97 %
