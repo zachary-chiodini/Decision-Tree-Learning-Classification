@@ -17,9 +17,7 @@
 <p align="center">
     <img src="photos/equations/equation2.png" width=50%>
 </p>
-<hr>
 
-<hr>
 <p align="center">
     <img src="photos/equations/equation3.png" width=50%>
 </p>
