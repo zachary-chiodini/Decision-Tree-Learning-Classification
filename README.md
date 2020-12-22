@@ -33,13 +33,13 @@
 <p align="center">
     <img src="photos/equations/equation5.png" width=50%>
 </p>
+<hr>
+<hr>
 
 <p align="center">
     <img src="photos/equations/equation6.png" width=50%>
 </p>
-<hr>
 
-<hr>
 <p align="center">
     <img src="photos/equations/equation7.png" width=50%>
 </p>
