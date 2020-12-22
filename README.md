@@ -22,15 +22,15 @@ Naive C4.5 Algorithm
 </p>
 
 <p align="center">
-    <img src="photos/infoEntropy.png" width=70%>
-</p>
-
-<p align="center">
     <img src="photos/equations/equation6.png" width=50%>
 </p>
 
 <p align="center">
     <img src="photos/equations/equation7.png" width=50%>
+</p>
+
+<p align="center">
+    <img src="photos/infoEntropy.png" width=70%>
 </p>
 
 <p align="center">
