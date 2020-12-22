@@ -80,11 +80,14 @@ from decision_tree import DecisionTree
 ```python
 model = DecisionTree()
 model.importcsv( 'tennis.csv' )
-model.data
+model.label
 ```
 
+    ['Outlook', 'Humidity', 'Wind', 'Play']
 
-
+```python
+model.data
+```
 
     {('Overcast', 'High', 'Strong', 'Yes'),
      ('Overcast', 'High', 'Weak', 'Yes'),
@@ -98,20 +101,6 @@ model.data
      ('Sunny', 'High', 'Weak', 'No'),
      ('Sunny', 'Normal', 'Strong', 'Yes'),
      ('Sunny', 'Normal', 'Weak', 'Yes')}
-
-
-
-
-```python
-model.label
-```
-
-
-
-
-    ['Outlook', 'Humidity', 'Wind', 'Play']
-
-
 
 
 ```python
