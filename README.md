@@ -50,5 +50,5 @@ Naive C4.5 Algorithm
 </p>
 
 <p align="center">
-    <img src="photos/algorithm.png" width=65%>
+    <img src="photos/algorithm.png" width=60%>
 </p>
