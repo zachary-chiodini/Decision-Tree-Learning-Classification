@@ -23,10 +23,6 @@
     <img src="photos/equations/equation1.png" width=50%>
 </p>
 
-<p align="justify">
-    Splitting an attribute a
-</p>
-
 <p align="center">
     <img src="photos/equations/equation2.png" width=50%>
 </p>
@@ -35,6 +31,10 @@
     <img src="photos/equations/equation3.png" width=50%>
 </p>
 <hr>
+
+<p align="justify">
+    Splitting an attribute a
+</p>
 
 <hr>
 <p align="center">
