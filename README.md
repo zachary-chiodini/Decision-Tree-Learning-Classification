@@ -65,6 +65,8 @@
 </p>
 <hr>
 
+<h1>Algorithm</h1>
+
 <hr>
 <p align="center">
     <img src="photos/algorithm.png" width=63%>
