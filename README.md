@@ -11,13 +11,19 @@
 
 <p align="justify">
     The module "decision_tree.py" interprets a data set <i>R</i> as a set of <i>m</i> tuples (1), where each tuple is an example.
-    The <i>i<sup>th</sup></i> tuple (2) contains <i>n</i> attribute values, denoted by <i>x</i>, and a target value, denoted by <i>y</i>.
+    The <i>i<sup>th</sup></i> tuple (2) contains <i>n</i> attribute values denoted by <i>x<sub>i,j</sub></i>, 
+    where each column index <i>j</i> represents a unique attribute,
+    and a target value denoted by <i>y</i>.
     A subset of the data set is denoted by <i>S</i> (3).
 </p>
 
 <hr>
 <p align="center">
     <img src="photos/equations/equation1.png" width=50%>
+</p>
+
+<p align="justify">
+    Splitting an attribute a
 </p>
 
 <p align="center">
