@@ -10,9 +10,9 @@
 <h1>Mathematics</h1>
 
 <p align="justify">
-    The module "decision_tree.py" interprets the data as a set of <i>m</i> tuples (1). 
-    The <i>i<sup>th</sup></i> tuple (2) contains <i>n</i> attribute values,
-    denoted by <i>x</i>, and a target value, denoted by <i>y</i>.
+    The module "decision_tree.py" interprets a data set <i>R</i> as a set of <i>m</i> tuples (1), where each tuple is an example.
+    The <i>i<sup>th</sup></i> tuple (2) contains <i>n</i> attribute values, denoted by <i>x</i>, and a target value, denoted by <i>y</i>.
+    A subset of the data set is denoted by <i>S</i> (3).
 </p>
 
 <hr>
