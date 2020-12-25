@@ -13,7 +13,7 @@
     The module "decision_tree.py" interprets a data set <i>R</i> as a set of <i>m</i> tuples (1), where each tuple is an example.
     The <i>i<sup>th</sup></i> tuple (2) contains <i>n</i> attribute values denoted by <i>x<sub>i,j</sub></i> (where <i>j = 1, 2, ..., n</i>) 
     and a target value denoted by <i>y<sub>i</sub></i>.
-    Each column index <i>j</i> represents a unique attribute.
+    Each index <i>j</i> represents a unique attribute.
     The target value <i>y<sub>i</sub></i> must be at the last index of each tuple.
     A subset of the data set is denoted by <i>S</i> (3).
 </p>
