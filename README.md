@@ -9,6 +9,12 @@
 
 <h1>Mathematics</h1>
 
+<p align="justify">
+    The module "decision_tree.py" interprets the data as a set of <i>m</i> tuples (1). 
+    The <i>i<sup>th</sup></i> tuple (2) contains <i>n</i> attribute values,
+    denoted by <i>x</i>, and a target value, denoted by <i>y</i>.
+</p>
+
 <hr>
 <p align="center">
     <img src="photos/equations/equation1.png" width=50%>
@@ -64,8 +70,6 @@
     <img src="photos/equations/equation10.png" width=50%>
 </p>
 <hr>
-
-<h1>Algorithm</h1>
 
 <hr>
 <p align="center">
