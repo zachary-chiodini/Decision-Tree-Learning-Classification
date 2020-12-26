@@ -58,6 +58,7 @@
     where <i>P(S,y)</i> is the probability of selecting the target value <i>y</i> from the subset <i>S</i>,
     or the number of times the value <i>y</i> occurs in the subset <i>S</i> devided by the number of examples in the subset <i>S</i>.
     The vertical bars denote the cardinality of the set or sequence.
+    The value of the information entropy is between 0 and 1 bits inclusive.
 </p>
 
 <hr>
