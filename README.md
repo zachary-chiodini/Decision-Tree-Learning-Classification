@@ -35,7 +35,7 @@
 <p align="justify">
     The module "decision_tree.py" splits on an attribute <i>a</i> by creating a new set <i>X<sub>a</sub></i>,
     which contains values <i>x<sub>i,j</sub></i> in each tuple <i>S<sub>i</sub></i> for all tuples in the subset <i>S</i>
-    such that <i>j = a</i> (4).
+    such that <i>j = a</i> (4). A set of unique target values <i>y<sub>i</sub></i> in subset <i>S</i> is also defined (5).
 </p>
 
 <hr>
