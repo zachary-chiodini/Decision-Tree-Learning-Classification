@@ -33,7 +33,8 @@
 <hr>
 
 <p align="justify">
-    Splitting an attribute a
+    All unique values belonging to an attribute <i>a</i> in subset <i>S</i> is a set of values <i>x<sub>i,j</sub></i> in each tuple <i>S<sub>i</sub></i> 
+    for all tuples in <i>S</i> such that <i>j = a</i> (4).
 </p>
 
 <hr>
