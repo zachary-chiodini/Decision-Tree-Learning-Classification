@@ -87,7 +87,11 @@
 <hr>
 
 <p align="justify">
-    The change in information entropy of a subset <i>S</i> after splitting an attribute <i>a</i> is given by the information gain <i>IG</i> (8).
+    The information entropy provides a measure of the purity of a data set, or how close it is to achieving a final verdict,
+    but it alone does not provide information on which attributes should be prioritized when selecting nodes to construct the decision tree.
+    For this, the purity of the data set after an attribute is split on each of its values should be measured and compared with the purity of the unsplit data set.
+    This calculation is called the information gain <i>IG</i> (8), 
+    which is the change in information entropy of a subset <i>S</i> after splitting an attribute <i>a</i>.
     The information entropy of the split is given by a weighted sum of the information entropy of each subset 
     <i>S<sub>a</sub>(S,x)</i> (9), which contains tuples <i>S<sub>i</sub></i> with the split value <i>x</i> at <i>x<sub>i,a</sub></i>.
 </p>
@@ -101,6 +105,10 @@
     <img src="photos/equations/equation9.png" width=50%>
 </p>
 <hr>
+
+<p align="justify">
+    
+</p>
 
 <hr>
 <p align="center">
