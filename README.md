@@ -33,7 +33,10 @@
 <hr>
 
 <p align="justify">
-    The module "decision_tree.py" splits on an attribute <i>a</i> by creating a new set <i>X<sub>a</sub></i>,
+    Each attribute will be a node in the decision tree. An attribute's unique values will be its child nodes.
+    Each of these child nodes will then connect to another attribute node, and so on.
+    This continues until the target value is reached, which is a leaf node.
+    The module "decision_tree.py" splits an attribute <i>a</i> into its unique values by creating a new set <i>X<sub>a</sub></i>,
     which contains values <i>x<sub>i,j</sub></i> in each tuple <i>S<sub>i</sub></i> for all tuples in the subset <i>S</i>
     such that <i>j = a</i> (4). A set of unique target values <i>y<sub>i</sub></i> in subset <i>S</i> is also defined (5).
 </p>
