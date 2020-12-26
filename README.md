@@ -71,6 +71,15 @@
 </p>
 <hr>
 
+<p align="justify">
+    A plot of the information entropy of a set containing two target values, <i>+</i> for yes and <i>-</i> for no, 
+    and their probabilities, <i>p<sub>+</sub></i> and <i>p<sub>-</sub></i> respectively, over all possible probabilities is shown below.
+    When the number of positive values is the same as the number of negative values in the set, the information entropy is one.
+    When the set contains only positive values or only negative values, the information entropy is zero.
+    Therefore, a set with a lower information entropy is preferred, because it is closer to achieving a final verdict of yes or no.
+    Note that <i>p<sub>+</sub> = 1 - p<sub>-</sub></i>.
+</p>
+
 <hr>
 <p align="center">
     <img src="photos/infoEntropy.png" width=70%>
