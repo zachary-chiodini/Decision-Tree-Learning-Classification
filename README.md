@@ -86,6 +86,10 @@
 </p>
 <hr>
 
+<p align="justify">
+    The change in information entropy of a subset <i>S</i> after splitting on an attribute <i>a</i> is the information gain <i>IG</i> (8).
+</p>
+
 <hr>
 <p align="center">
     <img src="photos/equations/equation8.png" width=50%>
