@@ -53,7 +53,7 @@
 <hr>
 
 <p align="justify">
-    The precedence of which attribute to split on first is determined partly by the information entropy <i>H</i> of a subset <i>S</i> (5).
+    Which attribute to split first is determined partly by the information entropy <i>H</i> of a subset <i>S</i> (6).
 </p>
 
 <hr>
