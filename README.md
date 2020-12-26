@@ -107,7 +107,14 @@
 <hr>
 
 <p align="justify">
-    
+    The ID3 algorithm uses information gain to select nodes when constructing the tree.
+    The C4.5 algorithm uses the information gain ratio <i>IGR</i> (10), 
+    which is the information gain upon splitting an attribute <i>a</i> devided by the intrinsic value <i>IV</i> of the split (11).
+    The information gain ratio takes the cardinality of the split into account when choosing an attribute.
+    The larger the portion of data eliminated by the split, 
+    the smaller the cardinality of <i>S<sub>a</sub>(S,x)</i>, the larger the instrisic value, and the smaller the information gain ratio.
+    This way, attributes that do not contribute very much to the decision making process but split into pure data sets will be of less priority.
+    Note that when the instrinsic value is zero, the data set cannot be split anymore and a final verdict must be achieved by a majority vote.
 </p>
 
 <hr>
@@ -119,6 +126,10 @@
     <img src="photos/equations/equation11.png" width=50%>
 </p>
 <hr>
+
+<p align="justify">
+    The module "decision_tree.py" uses the algorithm described in pseudocode below.
+</p>
 
 <hr>
 <p align="center">
