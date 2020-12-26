@@ -141,7 +141,7 @@
     However, because the algorithm is recursive and creates a nested structure,
     it is inherently a little complex. 
     I prefer a more explicit description over a more simplified one, 
-    because the latter may lead to unwanted ambiguity and misconception.
+    because the latter will lead to ambiguity.
 </p>
 
 <hr>
