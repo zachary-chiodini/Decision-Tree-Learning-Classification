@@ -48,6 +48,10 @@
 </p>
 <hr>
 
+<p align="justify">
+    The precedence of which attribute to split on first is determined partly by the information entropy <i>H</i> of the attribute (5).
+</p>
+
 <hr>
 <p align="center">
     <img src="photos/equations/equation6.png" width=50%>
