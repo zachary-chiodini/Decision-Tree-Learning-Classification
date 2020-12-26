@@ -139,7 +139,9 @@
     in which the leaf nodes are keys pointing to NULL values.
     I tried to make the pseudocode as explicit as possible to avoid any confusion.
     However, because the algorithm is recursive and creates a nested structure,
-    it is inherently a little complex and further simplification may lead to unwanted ambiguity.
+    it is inherently a little complex. 
+    I prefer a more explicit description over a more simplified one, 
+    because the latter may lead to unwanted ambiguity and misconceptions.
 </p>
 
 <hr>
