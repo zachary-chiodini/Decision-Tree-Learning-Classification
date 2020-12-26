@@ -53,7 +53,11 @@
 <hr>
 
 <p align="justify">
-    Which attribute to split first is determined partly by the information entropy <i>H</i> of a subset <i>S</i> (6).
+    Deciding which attribute should be chosen as a root node or a child node of another attribute's value is determined partly 
+    by the information entropy <i>H</i> of the subset <i>S</i> (6),
+    where <i>P(S,y)</i> is the probability of selecting the target value <i>y</i> from the subset <i>S</i>,
+    or the number of times the value <i>y</i> occurs in the subset <i>S</i> devided by the number of examples in the subset <i>S</i>.
+    The vertical bars denote the cardinality of the set or sequence.
 </p>
 
 <hr>
