@@ -72,7 +72,7 @@
 <hr>
 
 <p align="justify">
-    A plot of the information entropy of a set containing two target values, <i>+</i> for yes and <i>-</i> for no, 
+    A plot of the information entropy of a set containing two target values, <i>+</i> for positive or yes and <i>-</i> for negative or no, 
     and their probabilities, <i>p<sub>+</sub></i> and <i>p<sub>-</sub></i> respectively, over all possible probabilities is shown below.
     When the number of positive values is the same as the number of negative values in the set, the information entropy is one.
     When the set contains only positive values or only negative values, the information entropy is zero.
