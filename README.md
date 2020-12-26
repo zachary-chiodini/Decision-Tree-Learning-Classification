@@ -115,6 +115,7 @@
     the smaller the cardinality of <i>S<sub>a</sub>(S,x)</i>, the larger the instrisic value, and the smaller the information gain ratio.
     This way, attributes that do not contribute very much to the decision making process but split into pure data sets will be of less priority.
     Note that when the instrinsic value is zero, the data set cannot be split anymore and a final verdict must be achieved by a majority vote.
+    The module "decision_tree.py" returns an information gain ratio of zero if an intrinsic value of zero is encountered.
 </p>
 
 <hr>
