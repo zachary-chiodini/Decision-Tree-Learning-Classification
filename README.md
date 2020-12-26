@@ -87,7 +87,9 @@
 <hr>
 
 <p align="justify">
-    The change in information entropy of a subset <i>S</i> after splitting on an attribute <i>a</i> is the information gain <i>IG</i> (8).
+    The change in information entropy of a subset <i>S</i> after splitting an attribute <i>a</i> is given by the information gain <i>IG</i> (8).
+    The information entropy of the split is given by a weighted sum of the information entropy of each subset 
+    <i>S<sub>a</sub>(S,x)</i> (9), which contains tuples <i>S<sub>i</sub></i> with the split value <i>x</i> at <i>x<sub>i,a</sub></i>.
 </p>
 
 <hr>
