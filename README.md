@@ -167,12 +167,10 @@ from decision_tree import DecisionTree
     The file "tennis.csv" contains data on when a golfer named Peter decided to play golf during various weather conditions.
 </p>
 
-<hr>
 ```python
 model = DecisionTree()
 model.importcsv( 'tennis.csv' )
 ```
-<hr>
 
 <p align="justify">
     The headers of the file are stored in the "label" variable.
@@ -184,7 +182,6 @@ model.importcsv( 'tennis.csv' )
     However, the "DecisionTree" class and its algorithm can be used for any order of classification.
 </p>
 
-<hr>
 ```python
 model.label
 ```
@@ -207,7 +204,6 @@ model.data
      ('Sunny', 'High', 'Weak', 'No'),
      ('Sunny', 'Normal', 'Strong', 'Yes'),
      ('Sunny', 'Normal', 'Weak', 'Yes')}
-<hr>
 
 <p align="justify">
     The learn method employs the aforementioned learning algorithm on a data set.
@@ -216,21 +212,18 @@ model.data
     After the learning algorithm is employed on the data set, the resulting tree can be plotted with the plot method and given a title.
 </p>
 
-<hr>
 ```python
 model.learn( model.data )
 model.plot( 'Will Peter Play Golf?' )
 ```
-<hr>
+
 <p align="justify">
     Below is the ouput from the plot method. 
     This tree correctly classifies all of the data, and this can easily be verified.
     Next, let's try a more complicated example.
 </p>
 
-<hr>
 ![png](photos/tennistree.png)
-<hr>
 
 ```python
 model = DecisionTree()
