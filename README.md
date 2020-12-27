@@ -224,7 +224,8 @@ model.plot( 'Will Peter Play Golf?' )
 <h1>Example 2</h1>
 
 <p align="justify">
-    Let's try a more complicated example.
+    Let's try a more complicated example. 
+    The file "mushrooms.csv" contains 8124 examples of data on the toxicity of mushrooms based on various characteristics.
 </p>
 
 ```python
@@ -238,8 +239,12 @@ len( model.data )
 
     8124
 
-
-
+<p align="justify">
+    The data contains 22 attributes and a target class, shown below.
+    The target class is either poisoinous or edible.
+    The "DecisionTree" class will be used to contruct a decision tree from the data that will classify a mushroom as poisonous or edible 
+    based on the 22 attributes below.
+</p>
 
 ```python
 model.label
@@ -272,8 +277,15 @@ model.label
      'habitat',
      'class']
 
-
-
+<p align="justify">
+    The "testAndTrain" method takes a ratio, which is the ratio of data that will be sampled to train or construct the decision tree model. 
+    The sampling is done randomly without replacement.
+    The remainder of the data is separated from the training sample and used to test the accuracy of the model.
+    The code below samples 25% of the total number of examples in the data to contruct the tree, 
+    tests the contructed tree on the remaining 75% of the data and prints the results.
+    An accuracy of 99.61 % is achieved after sampling just 25% of the data.
+    However, since eating a poisonous mushroom may be a life or death situation, a higher accuracy will be preferred.
+</p>
 
 ```python
 model.testAndTrain( ratio = 0.25 )
@@ -283,6 +295,13 @@ model.testAndTrain( ratio = 0.25 )
     Samples tested         :  6093
     Total samples          :  8124
     Model accuracy         :  99.61 %
+
+<p align="justify">
+    Due to the size of this data set and the number of attributes it contains,
+    there is no way to completely visualize the decision tree model that was learned by the algorithm.
+    I edited the plot method to at least provide a visualization for the size of the tree, shown below.
+    This tree contains over 400 nodes.
+</p>
 
 ```python
 model.plot()
