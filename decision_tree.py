@@ -7,17 +7,18 @@ class DecisionTree :
 
     def __init__(
         self,
-        attr : List[ str ] = list( '' ),
-        data : Set[ Tuple[ Any ] ] = set( tuple( '' ) )
+        label : List[ str ] = list( '' ),
+        data  : Set[ Tuple[ Any ] ] = set( tuple( '' ) )
         ) -> None :
-        self.attr  = attr
+        self.label = label
         self.n     = 0
         self.data  = data
-        self.test  = set( tuple( '' ) )
-        self.train = set( tuple( '' ) )
         self.tree  = {} # nested hash map
         self.goal  = []
         self.rslt  = []
+        self.i = 0
+        self.testset  = set( tuple( '' ) )
+        self.trainset = set( tuple( '' ) )
         return
 
     def importcsv( self, path : str ) -> None :
@@ -25,8 +26,8 @@ class DecisionTree :
         with codecs.open(
             path, 'r', 'utf-8-sig'
             ) as file :
-            self.attr = file.readline().strip().split( ',' )[ : -1 ]
-            self.n = len( self.attr ) - 1
+            self.label = file.readline().strip().split( ',' )
+            self.n = len( self.label ) - 1
             for line in file :
                 self.data.add(
                     tuple( line.strip().split( ',' ) )
@@ -34,8 +35,8 @@ class DecisionTree :
         return
 
     def learn( self, data ) -> None :
-        assert self.attr, \
-               'DecisionTree needs a list of attributes.'
+        assert self.label, \
+               'DecisionTree needs a list of labels.'
         self.tree = {}
         self.__recurse( data, self.tree )
         return
@@ -50,8 +51,8 @@ class DecisionTree :
         if len( split ) == 1 :
             tree[ f.majorityVote( S ) ] = None
             return
-        tree[ self.attr[ index ] ] = {}
-        node = tree[ self.attr[ index ] ]
+        tree[ self.label[ index ] ] = {}
+        node = tree[ self.label[ index ] ]
         for value in split :
             node[ value ] = {}
             self.__recurse(
@@ -60,7 +61,7 @@ class DecisionTree :
                 )
         return
 
-    def testModel( self, data ) -> None :
+    def test( self, data ) -> None :
         assert self.tree, \
                'DecisionTree needs to learn a data set.'
         self.rslt, self.goal = [], []
@@ -77,8 +78,8 @@ class DecisionTree :
         tree   : 'Nested Dict'
         ) -> Any :
         node = list( tree.keys() )[ 0 ]
-        if node in self.attr :
-            index = self.attr.index( node )
+        if node in self.label :
+            index = self.label.index( node )
             value = sample[ index ]
             if value in tree[ node ].keys() :
                 node = self.output( sample, tree[ node ][ value ] )
@@ -99,25 +100,25 @@ class DecisionTree :
         return 
 
     def testAndTrain( self, ratio : float = 0.5 ) :
-        assert self.data and self.attr, \
-               'DecisionTree needs a data set and list of attributes.'
+        assert self.data and self.label, \
+               'DecisionTree needs a data set and list of labels.'
         assert ratio <= 1, 'Cannot split data more than 100%.'
         seen = set()
-        self.train = set()
+        self.trainset = set()
         data = list( self.data )
         for _ in range( int( ratio*len( data ) ) ) :
             index = randint( 0, len( data ) - 1 )
             while index in seen :
                 index = randint( 0, len( data ) - 1 )
-            self.train.add( data[ index ] )
+            self.trainset.add( data[ index ] )
             del data[ index ]
-        self.test = set( data )
-        self.learn( self.train )
-        self.testModel( self.test )
-        print( 'Samples in training set: ', len( self.train ) )
-        print( 'Samples tested         : ', len( self.test ) )
+        self.testset = set( data )
+        self.learn( self.trainset )
+        self.test( self.testset )
+        print( 'Samples in training set: ', len( self.trainset ) )
+        print( 'Samples tested         : ', len( self.testset ) )
         print( 'Total samples          : ',
-               len( self.train ) + len( self.test ) )
+               len( self.trainset ) + len( self.testset ) )
         self.showResult()
         return
         
@@ -136,6 +137,8 @@ class DecisionTree :
             )
         plt.axis( 'off' )
         plt.grid( b = None )
+        fig = plt.gcf()
+        fig.set_size_inches(18.5, 10.5)
         plt.show()
         plt.clf()
         return
@@ -143,11 +146,12 @@ class DecisionTree :
     def __plotNode(
         self, x : float, y : float, label : str
         ) -> None :
+        self.i += 1
         plt.text(
             x, y,
-            label,
+            str( self.i ),
             color = 'black',
-            fontsize = 14,
+            fontsize = 8,
             bbox = dict(
                 facecolor = 'white',
                 edgecolor = 'black',
