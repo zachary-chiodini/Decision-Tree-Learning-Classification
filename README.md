@@ -77,6 +77,7 @@
     When the number of positive values is the same as the number of negative values in the set, the information entropy is one.
     When the set contains only positive values or only negative values, the information entropy is zero.
     Therefore, a set with a lower information entropy is preferred, because it is closer to achieving a final verdict of yes or no.
+    It is more "pure."
     Note that <i>p<sub>+</sub> = 1 - p<sub>-</sub></i>.
 </p>
 
