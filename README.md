@@ -151,7 +151,7 @@
     <img src="photos/algorithm.png" width=63%>
 </p>
 
-<h1>Try It</h1>
+<h1>Example 1</h1>
 
 <p align="justify">
     Importing the "decision_tree.py" into a Python environment:
@@ -220,6 +220,8 @@ model.plot( 'Will Peter Play Golf?' )
 ```
 
 ![png](photos/tennistree.png)
+
+<h1>Example 2</h1>
 
 <p align="justify">
     Let's try a more complicated example.
