@@ -133,7 +133,7 @@
 <hr>
 
 <p align="justify">
-    The module "decision_tree.py" uses the algorithm described in pseudocode below.
+    The module "decision_tree.py" uses the learning algorithm described in pseudocode below.
     This is a naive C4.5 algorithm.
     I decided to use a nested hash map as the tree structure, 
     in which the leaf nodes are keys pointing to NULL values.
@@ -142,6 +142,8 @@
     it is inherently a little complex. 
     I prefer a more explicit description over a more simplified one, 
     because the latter will lead to ambiguity.
+    Note that this algorithm will produce a decision tree, 
+    but does not guarantee the optimal tree structure.
 </p>
 
 <hr>
@@ -151,16 +153,40 @@
 
 <h1>Try It</h1>
 
+<p align="justify">
+    Importing the "decision_tree.py" into a Python environment.
+</p>
+
+<hr>
 ```python
 from decision_tree import DecisionTree
 ```
+<hr>
 
+<p align="justify">
+    The "DecisionTree" class can read csv files and automatically convert them into a set of tuples.
+    The file should have the target values as the last column in the data set and headers for each column.
+    The file "tennis.csv" contains data on when a golfer named Peter decided to play golf during various weather conditions.
+</p>
 
+<hr>
 ```python
 model = DecisionTree()
 model.importcsv( 'tennis.csv' )
 ```
+<hr>
 
+<p align="justify">
+    The headers of the file are stored in the "label" variable.
+    The rest of the data is stored in the "data" variable.
+    Attributes "Outlook," "Humidity" and "Wind" correspond to columns 1, 2 and 3 in the data,
+    which are their respective values.
+    The last label and column of data is the target value, "Play" with values "Yes" or "No."
+    This data will lead to a binary classifier.
+    However, the "DecisionTree" class and its algorithm can be used for any order of classification.
+</p>
+
+<hr>
 ```python
 model.label
 ```
@@ -183,15 +209,30 @@ model.data
      ('Sunny', 'High', 'Weak', 'No'),
      ('Sunny', 'Normal', 'Strong', 'Yes'),
      ('Sunny', 'Normal', 'Weak', 'Yes')}
+<hr>
 
+<p align="justify">
+    The learn method employs the aforementioned learning algorithm on a data set.
+    The data set passed to the learning algorithm is the all the data found in the "tennis.csv" file.
+    Data passed to the learn method must be a set of tuples.
+    After the learning algorithm is employed on the data set, the resulting tree can be plotted with the plot method and given a title.
+</p>
 
+<hr>
 ```python
 model.learn( model.data )
 model.plot( 'Will Peter Play Golf?' )
 ```
+<hr>
+<p align="justify">
+    Below is the ouput from the plot method. 
+    This tree correctly classifies all of the data, and this can easily be verified.
+    Next, let's try a more complicated example.
+</p>
 
-
+<hr>
 ![png](photos/tennistree.png)
+<hr>
 
 ```python
 model = DecisionTree()
