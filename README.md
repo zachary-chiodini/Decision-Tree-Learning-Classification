@@ -242,7 +242,7 @@ len( model.data )
 
 <p align="justify">
     The data contains 22 attributes and a target class, shown below.
-    The target class is either poisoinous or edible.
+    The target class is either poisonous or edible.
     The "DecisionTree" class will be used to contruct a decision tree from the data that will classify a mushroom as poisonous or edible 
     based on the 22 attributes below.
 </p>
