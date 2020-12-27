@@ -148,7 +148,7 @@
 <p align="center">
     <img src="photos/algorithm.png" width=63%>
 </p>
-<hr>
+
 <h1>Try It</h1>
 
 ```python
