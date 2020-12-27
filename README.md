@@ -209,7 +209,9 @@ model.data
     The learn method employs the aforementioned learning algorithm on a data set.
     The data set passed to the learning algorithm is the all the data found in the "tennis.csv" file.
     Data passed to the learn method must be a set of tuples.
-    After the learning algorithm is employed on the data set, the resulting tree can be plotted with the plot method and given a title.
+    After the learning algorithm is employed on the data set, the resulting tree can be plotted with the plot method and given a title, shown below.
+    This tree correctly classifies all of the data, and this can easily be verified.
+    Next, let's try a more complicated example.
 </p>
 
 ```python
@@ -217,13 +219,11 @@ model.learn( model.data )
 model.plot( 'Will Peter Play Golf?' )
 ```
 
-<p align="justify">
-    Below is the ouput from the plot method. 
-    This tree correctly classifies all of the data, and this can easily be verified.
-    Next, let's try a more complicated example.
-</p>
-
 ![png](photos/tennistree.png)
+
+<p align="justify">
+    Let's try a more complicated example.
+</p>
 
 ```python
 model = DecisionTree()
