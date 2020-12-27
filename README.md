@@ -132,6 +132,8 @@
 </p>
 <hr>
 
+<h1>Algorithm</h1>
+
 <p align="justify">
     The module "decision_tree.py" uses the learning algorithm described in pseudocode below.
     This is a naive C4.5 algorithm.
