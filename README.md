@@ -138,7 +138,7 @@
     The module "decision_tree.py" uses the learning algorithm described in pseudocode below.
     This is a naive C4.5 algorithm.
     I decided to use a nested hash map as the tree structure, 
-    in which the leaf nodes are keys pointing to NULL values.
+    in which the leaf nodes are target value keys pointing to NULL values.
     I tried to make the pseudocode as explicit as possible to avoid any confusion.
     However, because the algorithm is recursive and creates a nested structure,
     it is inherently a little complex. 
