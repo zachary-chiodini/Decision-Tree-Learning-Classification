@@ -154,14 +154,12 @@
 <h1>Try It</h1>
 
 <p align="justify">
-    Importing the "decision_tree.py" into a Python environment.
+    Importing the "decision_tree.py" into a Python environment:
 </p>
 
-<hr>
 ```python
 from decision_tree import DecisionTree
 ```
-<hr>
 
 <p align="justify">
     The "DecisionTree" class can read csv files and automatically convert them into a set of tuples.
