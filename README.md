@@ -130,7 +130,6 @@
 <p align="center">
     <img src="photos/equations/equation11.png" width=50%>
 </p>
-<hr>
 
 <h1>Algorithm</h1>
 
