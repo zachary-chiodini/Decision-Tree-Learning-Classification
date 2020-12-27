@@ -209,7 +209,7 @@ model.data
 
 <p align="justify">
     The learn method employs the aforementioned learning algorithm on a data set.
-    The data set passed to the learning algorithm is the all the data found in the "tennis.csv" file.
+    The data set passed to the learning algorithm is all the data found in the "tennis.csv" file.
     Data passed to the learn method must be a set of tuples.
     After the learning algorithm is employed on the data set, the resulting tree can be plotted with the plot method and given a title, shown below.
     This tree correctly classifies all of the data, and this can easily be verified.
@@ -226,7 +226,6 @@ model.plot( 'Will Peter Play Golf?' )
 <h1>Example 2</h1>
 
 <p align="justify">
-    Let's try a more complicated example. 
     The file "mushrooms.csv" contains 8124 examples of data on the toxicity of mushrooms based on various characteristics.
 </p>
 
