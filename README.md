@@ -139,11 +139,7 @@
     This is a naive C4.5 algorithm.
     I decided to use a nested hash map as the tree structure, 
     in which the leaf nodes are target value keys pointing to NULL values.
-    I tried to make the pseudocode as explicit as possible to avoid any confusion.
-    However, because the algorithm is recursive and creates a nested structure,
-    it is inherently a little complex. 
-    I prefer a more explicit description over a more simplified one, 
-    because the latter will lead to ambiguity.
+    The algorithm is recursive and creates a nested structure.
     Note that this algorithm will produce a decision tree, 
     but does not guarantee the optimal tree structure.
 </p>
