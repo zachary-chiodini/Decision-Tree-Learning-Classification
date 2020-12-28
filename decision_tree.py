@@ -1,7 +1,7 @@
 import codecs, funks as f
 from random import randint
 import matplotlib.pyplot as plt
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Set, Tuple
 
 class DecisionTree :
 
