@@ -16,7 +16,6 @@ class DecisionTree :
         self.tree  = {} # nested hash map
         self.goal  = []
         self.rslt  = []
-        self.i = 0
         self.testset  = set( tuple( '' ) )
         self.trainset = set( tuple( '' ) )
         return
@@ -137,8 +136,6 @@ class DecisionTree :
             )
         plt.axis( 'off' )
         plt.grid( b = None )
-        fig = plt.gcf()
-        fig.set_size_inches(18.5, 10.5)
         plt.show()
         plt.clf()
         return
@@ -146,12 +143,11 @@ class DecisionTree :
     def __plotNode(
         self, x : float, y : float, label : str
         ) -> None :
-        self.i += 1
         plt.text(
             x, y,
-            str( self.i ),
+            label,
             color = 'black',
-            fontsize = 8,
+            fontsize = 12,
             bbox = dict(
                 facecolor = 'white',
                 edgecolor = 'black',
