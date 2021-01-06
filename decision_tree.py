@@ -1,5 +1,5 @@
 import codecs, funks as f
-from random import randint
+from random import shuffle
 import matplotlib.pyplot as plt
 from typing import Any, List, Set, Tuple
 
@@ -102,16 +102,11 @@ class DecisionTree :
         assert self.data and self.label, \
                'DecisionTree needs a data set and list of labels.'
         assert ratio <= 1, 'Cannot split data more than 100%.'
-        seen = set()
         self.trainset = set()
-        data = list( self.data )
-        for _ in range( int( ratio*len( data ) ) ) :
-            index = randint( 0, len( data ) - 1 )
-            while index in seen :
-                index = randint( 0, len( data ) - 1 )
-            self.trainset.add( data[ index ] )
-            del data[ index ]
-        self.testset = set( data )
+        data = shuffle( list( self.data ) )
+        index = int( ratio*len( data ) )
+        self.testset = data[ : index ]
+        self.trainset = data[ index : ]
         self.learn( self.trainset )
         self.test( self.testset )
         print( 'Samples in training set: ', len( self.trainset ) )
