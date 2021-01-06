@@ -103,7 +103,8 @@ class DecisionTree :
                'DecisionTree needs a data set and list of labels.'
         assert ratio <= 1, 'Cannot split data more than 100%.'
         self.trainset = set()
-        data = shuffle( list( self.data ) )
+        data = list( self.data )
+        shuffle( data )
         index = int( ratio*len( data ) )
         self.testset = data[ : index ]
         self.trainset = data[ index : ]
